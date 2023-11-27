@@ -15,4 +15,8 @@ const lista_spesa = ['farina', 'zuzzhero', 'uova', 'latte', 'burro', 'yogurt'];
 
 const list = document.getElementById('lista');
 
+let i = 0;
+while (i<lista_spesa.length) {
+    
+}
 
