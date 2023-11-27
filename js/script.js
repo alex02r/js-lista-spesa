@@ -17,7 +17,14 @@ const list = document.getElementById('lista');
 
 let i = 0;
 while (i<lista_spesa.length) {
-    list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}</li>`;
+    //bonus
+    if ("latte" == lista_spesa[i]) {
+        //allora latte è presente
+        list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}(scremato)</li>`
+    }else{
+        list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}</li>`;
+    }
+
     i++;
 }
 
