@@ -17,10 +17,7 @@ const list = document.getElementById('lista');
 
 let i = 0;
 while (i<lista_spesa.length) {
-    const li = document.createElement('li');
-    li.innerText = lista_spesa[i];
-    list.appendChild(li);
-
+    list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}</li>`;
     i++;
 }
 
