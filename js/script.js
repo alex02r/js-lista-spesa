@@ -20,7 +20,9 @@ while (i<lista_spesa.length) {
     //bonus
     if ("latte" == lista_spesa[i]) {
         //allora latte è presente
-        list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}(scremato)</li>`
+        let type = prompt('Come preferisci il latte? scremato o intero ?');
+        
+        list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]} (${type})</li>`;
     }else{
         list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}</li>`;
     }
