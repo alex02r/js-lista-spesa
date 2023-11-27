@@ -10,3 +10,9 @@
         7 - incrementiamo i.
     3 - chiudiamo il while 
 */
+
+const lista_spesa = ['farina', 'zuzzhero', 'uova', 'latte', 'burro', 'yogurt'];
+
+const list = document.getElementById('lista');
+
+
