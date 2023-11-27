@@ -20,9 +20,17 @@ while (i<lista_spesa.length) {
     //bonus
     if ("latte" == lista_spesa[i]) {
         //allora latte è presente
-        let type = prompt('Come preferisci il latte? scremato o intero ?');
+        let scrivi = false;
+        while (scrivi) {
+            let type = prompt('Come preferisci il latte, intero o scremato?');
+            if (type == "intero" || type == "scremato") {
+                list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]} (${type})</li>`;
+                scrivi = true
+            }else{
+                alert("Hai inserito un valore sbagliato, prova con ( intero ) o ( scremato)");
+            }
+        }
         
-        list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]} (${type})</li>`;
     }else{
         list.innerHTML +=`<li class="list-group-item"> ${lista_spesa[i]}</li>`;
     }
